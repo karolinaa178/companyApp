@@ -4,16 +4,16 @@ const express = require('express');
 const router = express.Router();
 const ProductController = require('../controllers/products.controller');
 
-router.get('/products', PorductController.getAll);
+router.get('/products', ProductController.getAll);
 
-router.get('/products/random', PorductController.getRandom);
+router.get('/products/random', ProductController.getRandom);
 
-router.get('/products/:id', PorductController.getById);
+router.get('/products/:id', ProductController.getById);
 
-router.post('/products', PorductController.addDepartment);
+router.post('/products', ProductController.addDepartment);
 
-router.put('/products/:id', PorductController.editById);
+router.put('/products/:id', ProductController.editById);
 
-router.delete('/products/:id', PorductController.deleteById);
+router.delete('/products/:id', ProductController.deleteById);
 
 module.exports = router;
